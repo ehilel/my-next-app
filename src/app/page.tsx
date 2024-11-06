@@ -99,10 +99,10 @@ export default function Home() {
             Number: {car.number}<br />
             Color: {car.color}<br />
             <button onClick={() => deleteCar(car._id!)}>Delete</button>
-            <button onClick={() => {
+            {/* <button onClick={() => {
               const updatedCar = { ...car, model: car.model + ' Updated' }; // Example update
               updateCar(car._id!, updatedCar);
-            }}>Update</button>
+            }}>Update</button> */}
             <br />
           </li>
         ))}
