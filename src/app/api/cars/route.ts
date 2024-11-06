@@ -28,6 +28,7 @@ export async function DELETE(request: Request){
   const car = await deleteDocument(client, 'cars', id);
   client.close();
 
+ 
   return NextResponse.json({
     data: car
 });

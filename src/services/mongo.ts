@@ -26,8 +26,8 @@ export async function deleteDocument(client: any, collection: string, id: string
 export async function updateDocument(client: any, collection: string, id: string, updateData: any) {
     const db = client.db('db01');
     const result = await db.collection(collection).updateOne(
-        { _id: new ObjectId(id) }, // Find the document by ID
-        { $set: updateData } // Set the updated fields
+        { _id: new ObjectId(id) }, 
+        { $set: updateData } 
     );
     return result;
 }
